@@ -3,11 +3,11 @@
 
 **Instituto Tecnológico y de Estudios Superiores de Monterrey**
 
-Final project
+- Final project
 
-TC2006 Programming Languages
+- TC2006 Programming Languages
 
-Gilberto Echeverría Furió
+- Gilberto Echeverría Furió
 
 
 ## Problem description
