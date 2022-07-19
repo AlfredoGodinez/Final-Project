@@ -34,6 +34,8 @@ The encryptor will be able to receive the text to be encrypted, the desired mode
 
 ## Proposed solution
 Broadly speaking, our proposal is to create a web application using elixir and the phoenix framework, which will be of great help to create a rich and interactive application quickly, with less code and fewer moving parts.
+For encryption, you can either enter the plain text, password, an image file or a .txt file that you want to encrypt. Now choose the block cipher mode of encryption.
+AES decryption has also the same process. By default, it assumes the entered text be in Base64. The input can be Base64 encoded or Hex encoded image and .txt file too. And the final decrypted output will be Base64 string.
 
 ## Topics used
 
