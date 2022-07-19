@@ -33,7 +33,7 @@ The encryptor will be able to receive the text to be encrypted, the desired mode
 * CBC (Cipher Block Chaining) mode is highly recommended and is an advanced form of block encryption. It requires IV to make each message unique, which means that identical plaintext blocks are encrypted in different ciphertext blocks. Therefore, it provides more robust encryption compared to ECB mode, but it is a bit slower compared to ECB mode. If an IV is not entered, the default value will be used here for CBC mode and that default value is a zero-based byte.
 
 ## Proposed solution
-Programming language to be used: Elixir
+Broadly speaking, our proposal is to create a web application using elixir and the phoenix framework, which will be of great help to create a rich and interactive application quickly, with less code and fewer moving parts.
 
 ## Topics used
 
