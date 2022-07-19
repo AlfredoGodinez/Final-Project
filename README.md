@@ -3,11 +3,18 @@
 
 **Instituto Tecnológico y de Estudios Superiores de Monterrey**
 
-- Final project
+Final project
 
-- TC2006 Programming Languages
+TC2006 Programming Languages
 
-- Gilberto Echeverría Furió
+Gilberto Echeverría Furió
+
+
+## Authors
+
+- [José Alfredo Godínez Gasca](https://github.com/AlfredoGodinez)
+- [Ángel de Jesús Limones Quirino](https://github.com/C1TR0N5)
+
 
 
 ## Problem description
@@ -28,9 +35,3 @@ The encryptor will be able to receive the text to be encrypted, the desired mode
 * Functional programming: The concepts of functional programming will be used for the encryption analyzer to be developed, this will facilitate the implementation since the functional strategy offers a series of useful advantages when it comes to the code design of an analyzer. Thanks to the higher-order functions and the clarity of the program code, even large collections of data can be easily managed.
 * Recursion: The recursion is a topic of utmost importance since to achieve the change of the text to encrypted code the recursion will be our greatest ally.
 * File I/O (Optional): If time permits, file handling will be included in order to receive the text through a file and be able to encrypt it.
-## Authors
-
-- [José Alfredo Godínez Gasca](https://github.com/AlfredoGodinez)
-- [Ángel de Jesús Limones Quirino](https://github.com/C1TR0N5)
-
-
