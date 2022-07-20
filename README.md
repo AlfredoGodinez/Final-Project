@@ -33,9 +33,10 @@ The encryptor will be able to receive the text to be encrypted, the desired mode
 * CBC (Cipher Block Chaining) mode is highly recommended and is an advanced form of block encryption. It requires IV to make each message unique, which means that identical plaintext blocks are encrypted in different ciphertext blocks. Therefore, it provides more robust encryption compared to ECB mode, but it is a bit slower compared to ECB mode. If an IV is not entered, the default value will be used here for CBC mode and that default value is a zero-based byte.
 
 ## Proposed solution
-Broadly speaking, our proposal is to create a web application using elixir and the phoenix framework, which will be of great help to create a rich and interactive application quickly, with less code and fewer moving parts.
+Our proposal is to create a web application using elixir and the phoenix framework, which will be of great help to create a rich and interactive application quickly, with less code and fewer moving parts.
 For encryption, you can either enter the plain text, password, an image file or a .txt file that you want to encrypt. Now choose the block cipher mode of encryption.
 AES decryption has also the same process. By default, it assumes the entered text be in Base64. The input can be Base64 encoded or Hex encoded image and .txt file too. And the final decrypted output will be Base64 string.
+For the encryption process we will use the Cloak.Ecto module for Elixir, which supports the AES encryption algorithm and will help us to create modules that automatically encrypt and decrypt the data.
 
 ## Topics used
 
