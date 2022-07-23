@@ -4,9 +4,9 @@
 #or text file with a string within it, and encrypt it according to the user's decision,
 #such as encryption, bit size of the key and text output format
 #
-#Alfredo Godínez
-#A01274993
-#21/07/2022
+#Alfredo Godínez  A01274993
+#Angel Limones    A00825333
+#22/07/2022
 
 defmodule AES.Calculator do
 
