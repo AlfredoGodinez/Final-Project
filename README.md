@@ -30,12 +30,21 @@ The encryptor will be able to receive the text to be encrypted, the desired mode
 * CBC (Cipher Block Chaining) mode is highly recommended and is an advanced form of block encryption. It requires initialization vector to make each message unique, which means that identical plaintext blocks are encrypted in different ciphertext blocks. Therefore, it provides more robust encryption compared to ECB mode, but it is a bit slower compared to ECB mode. If an initialization vector is not entered, the default value will be used here for CBC mode and that default value is a zero-based byte.
 
 ## Proposed solution
-Our proposal is to create a programm using elixir and the phoenix framework, which will be of great help to create a rich and interactive application quickly, with less code and fewer moving parts.
-For encryption, you can either enter the plain text, password, an image file or a .txt file that you want to encrypt. Now choose the block cipher mode of encryption.
-AES decryption has also the same process. By default, it assumes the entered text be in Base64. The input can be Base64 encoded or Hex encoded image and .txt file too. And the final decrypted output will be Base64 string.
-For the encryption process we will use the Cloak.Ecto module for Elixir, which supports the AES encryption algorithm and will help us to create modules that automatically encrypt and decrypt the data.
+Our proposal is to create a programm using elixir for encryption, where you can either enter plain text or a .txt file that you want to encrypt. Also you can either generate a random encryption key or use your own.
+AES decryption has also the same process. By default, it assumes the entered text be in Base64. The input can be Base64 encoded or .txt file. And the final decrypted output will be Base64 string.
+For the encryption/decryption process we will use the :crypto module that is already integrated in Erlang's environment, which supports the AES encryption algorithm and will help us to create modules that automatically encrypt and decrypt the data.
 
 ## Topics used
 * Functional programming: The concepts of functional programming will be used for the encryption analyzer to be developed, this will facilitate the implementation since the functional strategy offers a series of useful advantages when it comes to the code design of an analyzer. Thanks to the higher-order functions and the clarity of the program code, even large collections of data can be easily managed.
 * Recursion: The recursion is a topic of utmost importance since to achieve the change of the text to encrypted code the recursion will be our greatest ally.
 * File I/O (Optional): If time permits, file handling will be included in order to receive the text through a file and be able to encrypt it.
+
+## How to run
+1. Open terminal inside the project directory.
+2. `mix deps.get` <- Install required dependencies.
+3. `iex -S mix` <- Start Interactive Elixir.
+4. `secret = Encrypt.generate_secret` <- Generate secret key in variable "secret".
+5. `ciphertext = Encrypt.encrypt("Hola mundo", secret)` <- Call the function, sending the text to be encrypted as the first parameter and the variable "secret" as the second parameter, the result saved in the variable "ciphertext".
+
+## Requirements
+[Elixir](https://elixir-lang.org/install.html)
