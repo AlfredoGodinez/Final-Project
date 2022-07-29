@@ -23,7 +23,7 @@ defmodule Encrypt do
 
 
   #Generates a random base64 encoded secret key.
-  def execute_action([action: "generate_secret"]) do
+  def generate_secret do
     :crypto.strong_rand_bytes(16)
     |> :base64.encode
   end
