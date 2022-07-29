@@ -4,6 +4,8 @@
 #or text file with a string within it, and encrypt it according to the AES algorithm,
 #such as encryption, bit size of the key and text output format.
 #
+#Erlang crypto.
+#
 #Alfredo Godínez  A01274993
 #Angel Limones    A00825333
 #22/07/2022
@@ -56,6 +58,7 @@ defmodule Encrypt do
     iv = :crypto.strong_rand_bytes(16)
     {ciphertext, tag} =
       :crypto.block_encrypt(:aes_gcm, decode_key(key), iv, {@aad, to_string(val), 16})
+      #:crypto.crypto_one_time_aead(:aes_gcm, decode_key(key), iv, {@aad, to_string(val), 16})
     iv <> tag <> ciphertext
   end
 
