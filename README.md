@@ -42,8 +42,10 @@ For the encryption process we will use the Cloak.Ecto module for Elixir, which s
 
 ## How to run
 1. Open terminal inside the project directory.
-2. mix deps.get <- Install required dependencies.
-3. iex -S mix <- Start Interactive Elixir.
-4. secret = Encrypt.generate_secret <- Generate secret key in variable "secret".
-5. ciphertext = Encrypt.encrypt("Hola mundo", secret) <- Call the function, sending the text to be encrypted as the first parameter and the variable "secret" as the second parameter, and save it in the variable "ciphertext".
+2. `mix deps.get` <- Install required dependencies.
+3. `iex -S mix` <- Start Interactive Elixir.
+4. `secret = Encrypt.generate_secret` <- Generate secret key in variable "secret".
+5. `ciphertext = Encrypt.encrypt("Hola mundo", secret)` <- Call the function, sending the text to be encrypted as the first parameter and the variable "secret" as the second parameter, the result saved in the variable "ciphertext".
 
+## Requirements
+[Elixir](https://elixir-lang.org/install.html)
