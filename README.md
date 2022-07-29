@@ -45,6 +45,8 @@ For the encryption/decryption process we will use the :crypto module that is alr
 3. `iex -S mix` <- Start Interactive Elixir.
 4. `secret = Encrypt.generate_secret` <- Generate secret key in variable "secret".
 5. `ciphertext = Encrypt.encrypt("Hola mundo", secret)` <- Call the function, sending the text to be encrypted as the first parameter and the variable "secret" as the second parameter, the result saved in the variable "ciphertext".
+6. ~/.mix/escripts/encrypt --file ./1_example.txt --action encrypt --key $ENCRYPTION_SECRET <- Encrypt a file:
+7. ~/.mix/escripts/encrypt --file ./1_example_res.txt --action decrypt --key $ENCRYPTION_SECRET <- Decrypt  a file:
 
 ## Requirements
 [Elixir](https://elixir-lang.org/install.html)
